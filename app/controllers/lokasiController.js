@@ -62,14 +62,14 @@ const createLokasi = async (req, res) => {
         if (!lokasi) {
             res.status(404).send({
                 status : 'eror',
-                message : 'Data lokasi tidak ditemukan',
+                message : 'Data lokasi tidak dapat ditambahkan',
                 data : {}
             });
         }
         else {
             res.status(200).send({
                 status : 'success',
-                message : 'Data lokasi berhasil ditemukan',
+                message : 'Data lokasi berhasil ditambahkan',
                 data : {
                     lokasi
                 }
@@ -90,14 +90,14 @@ const updateLokasi = async (req, res) => {
         if (!lokasi) {
             res.status(404).send({
                 status : 'eror',
-                message : 'Data lokasi tidak ditemukan',
+                message : 'Data lokasi tidak dapat diperbarui',
                 data : {}
             });
         }
         else {
             res.status(200).send({
                 status : 'success',
-                message : 'Data lokasi berhasil ditemukan',
+                message : 'Data lokasi berhasil diperbarui',
                 data : {
                     lokasi
                 }
@@ -118,14 +118,14 @@ const deleteLokasi = async (req, res) => {
         if (!lokasi) {
             res.status(404).send({
                 status : 'eror',
-                message : 'Data lokasi tidak ditemukan',
+                message : 'Data lokasi tidak berhasil dihapus',
                 data : {}
             });
         }
         else {
             res.status(200).send({
                 status : 'success',
-                message : 'Data lokasi berhasil ditemukan',
+                message : 'Data lokasi berhasil dihapus',
                 data : {
                     lokasi
                 }

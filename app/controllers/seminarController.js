@@ -64,14 +64,14 @@ const createSeminar = async (req, res) => {
         if (!seminar) {
             res.status(404).send({
                 status : 'eror',
-                message : 'Data seminar tidak ditemukan',
+                message : 'Data seminar tidak berhasil ditambahkan',
                 data : {}
             });
         }
         else {
             res.status(200).send({
                 status : 'success',
-                message : 'Data seminar berhasil ditemukan',
+                message : 'Data seminar berhasil ditambahkan',
                 data : {
                     seminar
                 }
@@ -93,14 +93,14 @@ const updateSeminar = async (req, res) => {
         if (!seminar) {
             res.status(404).send({
                 status : 'eror',
-                message : 'Data seminar tidak ditemukan',
+                message : 'Data seminar tidak dapat diperbarui',
                 data : {}
             });
         }
         else {
             res.status(200).send({
                 status : 'success',
-                message : 'Data seminar berhasil ditemukan',
+                message : 'Data seminar berhasil diperbarui',
                 data : {
                     seminar
                 }
@@ -122,14 +122,14 @@ const deleteSeminar = async (req, res) => {
         if (!seminar) {
             res.status(404).send({
                 status : 'eror',
-                message : 'Data seminar tidak ditemukan',
+                message : 'Data seminar tidak menghapus data',
                 data : {}
             });
         }
         else {
             res.status(200).send({
                 status : 'success',
-                message : 'Data seminar berhasil ditemukan',
+                message : 'Data seminar berhasil dihapus',
                 data : {
                     seminar
                 }

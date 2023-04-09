@@ -1,4 +1,4 @@
-/* require('dotenv').config();
+require('dotenv').config();
 const pg_name = process.env.PGDATABASE;
 const pg_user = process.env.PGUSER;
 const pg_password = process.env.PGPASSWORD;
@@ -11,4 +11,4 @@ module . exports = {
     pg_password,
     pg_host,
     pg_port
-} */
+}

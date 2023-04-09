@@ -23,3 +23,11 @@ const deletePeserta = (id) => {
         }
     });
 }
+
+module.exports = {
+    getAllPeserta,
+    getPesertaById,
+    createPeserta,
+    updatePeserta,
+    deletePeserta
+}

@@ -23,3 +23,11 @@ const deleteTiket = (id) => {
         }
     });
 }
+
+module.exports = {
+    getAllTiket,
+    getTiketById,
+    createTiket,
+    updateTiket,
+    deleteTiket
+}

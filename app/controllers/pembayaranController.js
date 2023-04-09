@@ -176,5 +176,7 @@ module.exports = {
     getPembayaranById,
     createPembayaran,
     updatePembayaran,
-    deletePembayaran
+    deletePembayaran,
+    getPembayaranBerhasil,
+    getPembayaranGagal
 }

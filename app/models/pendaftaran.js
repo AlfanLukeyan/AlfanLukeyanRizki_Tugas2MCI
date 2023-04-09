@@ -25,7 +25,7 @@ module.exports = (sequelize, DataTypes) => {
   pendaftaran.init({
     waktu_pendaftaran: DataTypes.DATEONLY,
     status_pendaftaran: DataTypes.BOOLEAN,
-    id_peserta: DataTypes.INTEGER,
+    peserta_id: DataTypes.INTEGER,
   }, {
     sequelize,
     modelName: 'pendaftaran',

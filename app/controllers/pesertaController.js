@@ -57,6 +57,7 @@ const getPesertaById = async (req, res) => {
     });
 }
 const createPeserta = async (req, res) => {
+    console.log(req.body);
     pesertaService.createPeserta(req.body)
     .then (peserta => {
         res.status(200).send({
